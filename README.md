@@ -21,4 +21,4 @@ within your organization into one that produces more secure code."</pre>
 ![logo_3](https://user-images.githubusercontent.com/90532971/188336585-80f93458-308b-42fd-b67a-e04463f3527c.png)
 
 <h3>HTML Injection - Reflected (GET)</h3>
-Link - * Soon to come *
+Link - <a href="https://github.com/Adkali/bWAPP-Projec-Walk/tree/main/HTML%20Injection%20-%20Reflected%20(GET)%20-%20Low">HTML Injection - Reflected (GET)</a>
