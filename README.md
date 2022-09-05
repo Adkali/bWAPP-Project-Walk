@@ -1,4 +1,4 @@
-# bWAPP-Project-walkthgouth
+# bwapp-project-walkthrough 
 While learning Web Penetration Testing and get to know extra vulnerabilities taking<br>
 places on Webs, thought taking my learning a step further and make some<br>
 bWAPP challenges as much as i can for learning purpose. When it comes to security, any website could be<br>
