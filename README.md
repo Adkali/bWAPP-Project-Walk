@@ -1,11 +1,5 @@
 # bwapp-project-walkthrough 
-While learning Web Penetration Testing and get to know extra vulnerabilities taking<br>
-places on Webs, thought taking my learning a step further and make some<br>
-bWAPP challenges as much as i can for learning purpose. When it comes to security, any website could be<br>
-vulnerable to attack which can compromise sensetive data or worse.<br>
-The purpose of bWAPP is so show exampls of some of the most common vector attacks<br>
-and vullnerabilits that can lead to exploit because some bugy code, bad misconfiguration or<br>
-some developer that just know how to bulid, but can't see from the eye of an attacker.<br>
+While learning Web Penetration Testing and get to know extra vulnerabilities taking places on Webs, thought taking my learning a step further and make some bWAPP challenges as much as i can for learning and education purpose. When it comes to security, any website could be vulnerable to attack which can compromise sensetive data or worse. The purpose of bWAPP is so show exampls of some of the most common vector attacks and vulnerabilities that can lead to exploit because some bugy code, bad misconfiguration or some developer that just know how to bulid, but can't see from the eye of an attacker.<br>
 <br>
 I will post from time to time some of my progress while trying braking the code/using<br>
 Exploitation of weakness. The list is by the OWASP TOP10 Web Application Security Risks.<br>
