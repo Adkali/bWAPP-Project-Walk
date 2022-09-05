@@ -10,7 +10,7 @@ some developer that just know how to bulid, but can't see from the eye of an att
 I will post from time to time some of my progress while trying braking the code/using<br>
 Exploitation of weakness. The list is by the OWASP TOP10 Web Application Security Risks.<br>
 <h3>Hope you will find this useful.<br>
-You are more then welcome to share it.</h3>
+You are more then welcome to share this repository.</h3>
 <br>
 <pre>"Companies should adopt this document and start the process of
 ensuring that their web applications minimize these risks. Using the OWASP Top 10 is
