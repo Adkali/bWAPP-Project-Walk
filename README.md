@@ -15,7 +15,7 @@ You are more then welcome to share it.</h3>
 <pre>"Companies should adopt this document and start the process of
 ensuring that their web applications minimize these risks. Using the OWASP Top 10 is
 perhaps the most effective first step towards changing the software development culture
-within your organization into one that produces more secure code."</pre>
+within your organization into one that produces more secure code." - OWASP</pre>
 
 ----------------------------------------------------------------
 ![logo_3](https://user-images.githubusercontent.com/90532971/188336585-80f93458-308b-42fd-b67a-e04463f3527c.png)
