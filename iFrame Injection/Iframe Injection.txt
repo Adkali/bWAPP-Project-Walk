@@ -1,0 +1,57 @@
+bWAPP - iFrame Injection // - Medium
+---------------------------
+Note: The Low lvl is not so hard because you can inject everything you want by
+changing the ParamUrl to some other phisi site or code, and by that manipulate the victim.
+----------------------------------------
+
+Medium:
+
+When selecting the iFrame Injection, a 'robots.txt' page apeears to us.
+For those who doesn't know, this page contains pages that wont be found by the searching engine.
+When admin puts pages inside this document, he basiclly telling the searching engines that won't
+show results containing the path directories of what ever puts inside this 'robots.txt'
+Why is that? from security reasons, but it is a flow because when entering this, we can see which pages
+the admin want to hide from us, and we as the attacker know that something important hide over there.
+
+
+Now, as the name of this page, i guess we need to inject an iframe tag inside this page.
+let's begin whith a little tag, and see what we get from doing it:
+
+Code: Take the original path, and try changing the ParamWidth/Paramheight values, and the results are
+we can choose which value will be set to them. Also, try changing the ParamUrl to something let's say the
+name of this page, which is iframei.php, and we can see nothing appears on the current page we are in it.
+
+Now, can we inject some html tags inside?
+Let's write the next line:
+Code: "><iframe src="iframei.php"</iframe>
+
+Now, because the ParamWidth is the last, we make the inject at this parameter.
+As you can see, we manage to broke code, but something went wrong.
+entring the source, reavels us what heppened.
+How can it be fix? we have to bypass the source code because nothing filters our injected strings.
+When we send it to the page, we can manipulate it to think the code is actually part of the real one.
+
+Let's try and fix the code:
+Try the next Code: "></iframe><iframe src="iframei.php"></iframe><!--
+As you can see, by entering the source, we are telling the page to ignore everything else,
+and we take care of closing the iframe tag with the "</iframe>.
+After that, we write our own code, and after that finish with the '<!--', which tell it that
+everything else is just a comment, so ignore it.
+*Note: When does, notice when making " " inside the iframe src. it adds double \ \, and nothing founds.
+by removing them, we actually puts an ifarame tag inside the current page.
+Code: "></iframe><iframe src=iframei.php</iframe><!--
+
+
+Lets try inject some script inside it.
+Code: "></iframe><script>alert("Hello-World")</script><!---
+Nothing, why?
+try bypass the \ \ by making double ` ` instead of " " of ' '. Success!
+-------------------------
+
+When attacker manage injecting iframe inside a web, he can manipulate a victim
+to click on it, and actually make him believe the iframe is part of the web.
+when the victim does, the attacker can pull he's sensetive information by triggering the
+victim to make an action, which he believes (Victim) the action he made
+came from the real site, when it doesn't.
+
+Thanks for watching :)
